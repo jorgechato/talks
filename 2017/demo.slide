@@ -1,0 +1,27 @@
+The State of Go
+Where we are in May 2017
+
+Jorge Chato
+Hacker, free culture & AI lover
+http://jorgechato.com
+@jorgechato
+
+* Notes
+
+Most of the code examples won't run except locally and using tip.
+
+The playground runs Go 1.8.
+
+* 
+
+.background images/demo/mars.jpg
+
+* Agenda
+
+Changes since Go 1.8:
+
+- The Language
+- The Standard Library
+- The Runtime
+- The Tooling
+- The Community
