@@ -39,6 +39,7 @@ $ docker build \
 $ docker run -d \
 -v ${PWD}/2017/demo.html:/slides/index.html \
 -v ${PWD}/reveal/css:/slides/css \
+-v ${PWD}/2017/images:/slides/images \
 -p 8000:8000 \
 --name js-slides \
 jorge-js-slides

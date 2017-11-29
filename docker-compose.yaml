@@ -27,3 +27,4 @@ services:
     volumes:
       - ./$FOLDER/$SLIDE:/slides/index.html
       - ./$REVEALCSS:/slides/css
+      - ./$FOLDER/images:/slides/images
