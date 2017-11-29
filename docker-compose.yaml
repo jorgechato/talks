@@ -25,6 +25,5 @@ services:
     ports:
       - $JSPORT:8000
     volumes:
-      - ./$FOLDER/$SLIDE:/slides/index.html
+      - ./$FOLDER:/slides/$FOLDER
       - ./$REVEALCSS:/slides/css
-      - ./$FOLDER/images:/slides/images

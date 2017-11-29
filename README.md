@@ -37,9 +37,8 @@ $ docker build \
 -f Dockerfile-js .
 
 $ docker run -d \
--v ${PWD}/2017/demo.html:/slides/index.html \
+-v ${PWD}/2017:/slides/2017 \
 -v ${PWD}/reveal/css:/slides/css \
--v ${PWD}/2017/images:/slides/images \
 -p 8000:8000 \
 --name js-slides \
 jorge-js-slides
@@ -53,14 +52,13 @@ If you are running it with docker-compose, which I recommend, you can set the
 variables in the .env file.
 ```zsh
 # Common variables
-FOLDER=2017
+FOLDER=2018
 
 # *.slides variables
 PRESENT=present
 GOPORT=3999
 
 # *.html variables
-JSPORT=8000
-SLIDE=demo.html
 REVEALCSS=reveal/css
+JSPORT=8000
 ```
