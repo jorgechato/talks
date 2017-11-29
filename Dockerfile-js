@@ -1,0 +1,14 @@
+FROM node:latest
+
+RUN mkdir /slides
+WORKDIR /slides
+
+RUN git clone https://github.com/hakimel/reveal.js.git /slides
+RUN rm -rf css/ index.html
+
+RUN npm install -g grunt-cli
+RUN npm install
+
+ENTRYPOINT npm start
+
+EXPOSE 8000

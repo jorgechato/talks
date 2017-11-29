@@ -1,0 +1,29 @@
+version: "2"
+
+
+services:
+  go:
+    image: jorge-go-slides
+    build:
+      context: .
+      dockerfile: Dockerfile-go
+    env_file: .env
+    command: /go/bin/present
+    ports:
+      - $GOPORT:3999
+    volumes:
+      - ./$FOLDER:/slides/$FOLDER
+      - ./$PRESENT:/slides/present
+
+  js:
+    image: jorge-js-slides
+    build:
+      context: .
+      dockerfile: Dockerfile-js
+    env_file: .env
+    command: npm start
+    ports:
+      - $JSPORT:8000
+    volumes:
+      - ./$FOLDER/$SLIDE:/slides/index.html
+      - ./$REVEALCSS:/slides/css
