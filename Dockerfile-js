@@ -4,7 +4,7 @@ RUN mkdir /slides
 WORKDIR /slides
 
 RUN git clone https://github.com/hakimel/reveal.js.git /slides
-RUN rm -rf css/
+RUN rm -rf css/ index.html demo.html
 
 RUN npm install -g grunt-cli
 RUN npm install
