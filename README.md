@@ -1,7 +1,6 @@
 # My slides
-[![Godoc](https://img.shields.io/badge/present-documentation-blue.svg)](https://godoc.org/golang.org/x/tools/present)
-[![Godoc](https://img.shields.io/badge/present-documentation2-blue.svg)](https://godoc.org/golang.org/x/tools/cmd/present)
-[![JavaScriptdoc](https://img.shields.io/badge/reveal.js-documentation-yellow.svg)](https://github.com/hakimel/reveal.js)
+[![Godoc](https://img.shields.io/badge/documentation-present-blue.svg)](https://godoc.org/golang.org/x/tools/present)
+[![JavaScriptdoc](https://img.shields.io/badge/documentation-reveal.js-yellow.svg)](https://github.com/hakimel/reveal.js)
 
 ## Install & Run
 ### If the slide is *.slide
@@ -62,3 +61,5 @@ GOPORT=3999
 REVEALCSS=reveal/css
 JSPORT=8000
 ```
+## Notes
+If the file starts with *note-*, It is just a note not a slide.

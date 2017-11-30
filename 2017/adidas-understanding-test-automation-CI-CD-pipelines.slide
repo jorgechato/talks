@@ -7,9 +7,29 @@ Slides on [[https://github.com/jorgechato/talks/tree/master/2017/adidas-understa
 
 * Agenda
 
-- The Language
-- The Standard Library
+- The Jenkins Structure
+
+- The Pipeline
+	- The Nodes
+	- The Stages
+	- The Errors
+	- Bonus
+: Bonus retry(2){}
+
 - The Toolkit
+: Using a library and the difference between the 2 libraries
+: - The Slack Notification
+
+- The Standard Library
+	- The live documentation
+
 - The Community
+: - The Workflow to create a new functionality from zero to be approve
+
 - The Runtime
+
+- The Hackathon
+: - The Micro-Hackathon
+
+* 
 
