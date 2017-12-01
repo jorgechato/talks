@@ -18,6 +18,7 @@ $ docker build \
 $ docker run -d \
 -v ${PWD}/2017:/slides/2017 \
 -v ${PWD}/present:/slides/present \
+-v .${PWD}/common:/slides/common \
 -p 3999:3999 \
 --name go-slides \
 jorge-go-slides
@@ -38,6 +39,7 @@ $ docker build \
 $ docker run -d \
 -v ${PWD}/2017:/slides/2017 \
 -v ${PWD}/reveal/css:/slides/css \
+-v .${PWD}/common:/slides/common \
 -p 8000:8000 \
 --name js-slides \
 jorge-js-slides
@@ -52,6 +54,7 @@ variables in the .env file.
 ```zsh
 # Common variables
 FOLDER=2018
+COMMONDIR=common
 
 # *.slides variables
 PRESENT=present

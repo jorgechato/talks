@@ -14,6 +14,7 @@ services:
     volumes:
       - ./$FOLDER:/slides/$FOLDER
       - ./$PRESENT:/slides/present
+      - ./$COMMONDIR:/slides/common
 
   js:
     image: jorge-js-slides
@@ -27,3 +28,4 @@ services:
     volumes:
       - ./$FOLDER:/slides/$FOLDER
       - ./$REVEALCSS:/slides/css
+      - ./$COMMONDIR:/slides/common
