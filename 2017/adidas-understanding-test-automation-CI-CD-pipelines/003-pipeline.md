@@ -1,4 +1,12 @@
 ## The Pipeline
+notes:
+The main idea behind the Pipelines is to go from develop to production.
+
+It is a file or snippet written in groovy.
+
+The are different components on it, we are going to cover most of
+them.
+
 /---/
 ![](2017/images/adidas-understanding-test-automation-CI-CD-pipelines/node.jpg)
 ```groovy
@@ -7,6 +15,11 @@ node ("docker") {
 }
 ```
 > The Nodes
+notes:
+The agent is the machine or VM where our project is going to be executed
+
+You can specify the node by the agent name or the labels
+
 /---/
 ![](2017/images/adidas-understanding-test-automation-CI-CD-pipelines/stages.jpg)
 ```groovy
@@ -15,6 +28,7 @@ stage('Checkout & Setup libs') {
 }
 ```
 > The Stages
+
 /---/
 ```groovy
 try {
@@ -27,6 +41,7 @@ try {
 }
 ```
 > The Errors
+
 /---/
 ```groovy
 retry(3){
@@ -34,6 +49,7 @@ retry(3){
 }
 ```
 > Bonus
+
 /---/
 ```groovy
 #!/usr/bin/env groovy
@@ -63,7 +79,6 @@ node ("docker") {
         bitbucketUtils.notify message: "Collect info", commit: commit, status: 'progress', credentials: gitCredentials
 	}
 
-	//TODO: add Sonar to Bitbucket first
 	stage('Sonar') {
 		bitbucketUtils.notify message: "Sonar", commit: commit, status: 'progress', credentials: gitCredentials
 		sonar.run version: '1.0', branch: branch

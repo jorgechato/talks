@@ -1,5 +1,9 @@
 ## Toolkit
+
 /---/
 ```groovy
-@Library(['global-jenkins-library@master']) _
+@library(['global-jenkins-library@master']) _
+```
+```groovy
+@library(['gtt-jenkins-library@master']) _
 ```
