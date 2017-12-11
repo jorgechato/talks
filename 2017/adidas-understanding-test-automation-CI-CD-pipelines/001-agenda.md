@@ -3,9 +3,9 @@
 - The Jenkins Structure
 - The Pipeline
 - The Toolkit
-- The Standard Library
+- The Library's Standards
 - The Community
-- The Runtime
+- The Adventure Time
 - The Hackathon
 
 Note:
