@@ -1,2 +1,6 @@
 ## Understanding test automation CI/CD pipelines
-> José Sampayo && Jorge Chato
+> by Jorge Chato
+
+Note:
+- yall probably now this
+- screen
