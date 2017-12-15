@@ -999,6 +999,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+  opacity: 0;
   -webkit-perspective: 600px;
           perspective: 600px; }
 
@@ -1025,7 +1026,7 @@ body {
   z-index: 2; }
 
 .print-pdf .reveal .slide-background {
-  opacity: 1 !important;
+  opacity: .25 !important;
   visibility: visible !important; }
 
 /* Video backgrounds */
