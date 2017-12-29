@@ -10,20 +10,26 @@ color: #222; }
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
+.reveal .progress,
+.reveal a,
+.reveal .controls{
+	color: #9B111E !important;
+}
+
 body {
 	background: #222;
 background-color: #222; }
 
 .adidas-logo {
 	position: absolute;
-    left: 1em;
-    top: .5em;
+	left: 1em;
+	top: .5em;
 	opacity: .2;
 	font-family: "adineue PRO TT", "Source Sans Pro", Helvetica, sans-serif !important;
 }
 
 .reveal {
-	font-family: "adineue PRO TT Light", "Source Sans Pro", Helvetica, sans-serif;
+	font-family: "adineue PRO TT", "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 42px;
 	font-weight: normal;
 color: #fff; }

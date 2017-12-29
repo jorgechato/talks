@@ -999,7 +999,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0;
+  /*opacity: 0;*/
   -webkit-perspective: 600px;
           perspective: 600px; }
 
