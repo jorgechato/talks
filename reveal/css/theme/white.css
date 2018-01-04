@@ -10,6 +10,10 @@ color: #fff; }
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
+.reveal .small-list ul{
+	font-size: .5em;
+}
+
 .reveal .progress,
 .reveal a,
 .reveal .controls{
