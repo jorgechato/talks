@@ -5,6 +5,19 @@
  *
  * Copyright (C) 2017 Hakim El Hattab, http://hakim.se
  */
+ @font-face {
+  font-family: 'RandM';
+  src: url('/common/fonts/rick-and-morty.ttf');
+}
+.RandM {
+  font-family: "RandM" !important;
+}
+.clear-image img {
+    margin: 0px !important;
+    background: none !important;
+    border: 0px !important;
+    box-shadow: none !important;
+}
 /*********************************************
  * RESET STYLES
  *********************************************/
@@ -252,8 +265,12 @@ body {
     color: currentColor;
     -webkit-transform: scale(0.9999);
             transform: scale(0.9999);
-    transition: color 0.2s ease, opacity 0.2s ease, -webkit-transform 0.2s ease;
-    transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+    transition: color 0.2s ease,
+ opacity 0.2s ease,
+ -webkit-transform 0.2s ease;
+    transition: color 0.2s ease,
+ opacity 0.2s ease,
+ transform 0.2s ease;
     z-index: 2;
     pointer-events: auto;
     font-size: inherit;
