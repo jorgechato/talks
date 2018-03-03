@@ -1,0 +1,1 @@
+THE <b>MATH<spam class="RandM">ish</spam></b> OF THE ALGORITHM

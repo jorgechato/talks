@@ -12,7 +12,8 @@ services:
     ports:
       - $GOPORT:3999
     volumes:
-      - ./$FOLDER:/slides/$FOLDER
+      - ./2017:/slides/2017
+      - ./2018:/slides/2018
       - ./$PRESENT:/slides/present
       - ./$COMMONDIR:/slides/common
 
@@ -26,6 +27,7 @@ services:
     ports:
       - $JSPORT:8000
     volumes:
-      - ./$FOLDER:/slides/$FOLDER
+      - ./2017:/slides/2017
+      - ./2018:/slides/2018
       - ./$REVEALCSS:/slides/css
       - ./$COMMONDIR:/slides/common

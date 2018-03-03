@@ -16,7 +16,7 @@ $ docker build \
 -f Dockerfile-go .
 
 $ docker run -d \
--v ${PWD}/2017:/slides/2017 \
+-v ${PWD}/2018:/slides/2018 \
 -v ${PWD}/present:/slides/present \
 -v .${PWD}/common:/slides/common \
 -p 3999:3999 \
@@ -37,7 +37,7 @@ $ docker build \
 -f Dockerfile-js .
 
 $ docker run -d \
--v ${PWD}/2017:/slides/2017 \
+-v ${PWD}/2018:/slides/2018 \
 -v ${PWD}/reveal/css:/slides/css \
 -v .${PWD}/common:/slides/common \
 -p 8000:8000 \
@@ -53,7 +53,6 @@ If you are running it with docker-compose, which I recommend, you can set the
 variables in the .env file.
 ```zsh
 # Common variables
-FOLDER=2018
 COMMONDIR=common
 
 # *.slides variables

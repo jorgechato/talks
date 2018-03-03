@@ -1,4 +1,7 @@
-## How to train your model in the cloud
-#### <spam class="RandM">and not dying in the process</spam>
+<spam class="clear-image">![](2018/images/ucode-how-to-train-deep-learning-models-in-the-cloud/title2.png)</spam>
+<spam class="RandM">and not dying in the process</spam>
 
-<!-- > with <i class="fa fa-heart red" aria-hidden="true"></i> by Jorge -->
+Notes:
+Entrenar != predecir
+
+Es necesario guardar los modelos entrenados (.ckpt, .h5s...)
