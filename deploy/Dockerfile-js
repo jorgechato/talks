@@ -1,0 +1,21 @@
+FROM node:latest
+
+RUN mkdir /slides
+WORKDIR /slides
+
+RUN git clone https://github.com/hakimel/reveal.js.git /slides
+RUN rm -rf css/ index.html demo.html
+
+ADD 2018 /slides/2018
+ADD reveal/css /slides/css
+ADD common /slides/common
+
+RUN npm install -g grunt-cli
+RUN npm install
+
+EXPOSE 8000
+EXPOSE 8080
+EXPOSE 443
+EXPOSE 80
+
+ENTRYPOINT npm start -- --port=80

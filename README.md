@@ -1,4 +1,5 @@
 # My slides
+[![Docker](https://quay.io/repository/orggue/talks/status "Docker")](https://quay.io/repository/orggue/talks)
 [![Godoc](https://img.shields.io/badge/documentation-present-blue.svg)](https://godoc.org/golang.org/x/tools/present)
 [![JavaScriptdoc](https://img.shields.io/badge/documentation-reveal.js-yellow.svg)](https://github.com/hakimel/reveal.js)
 
@@ -47,6 +48,12 @@ jorge-js-slides
 # or
 
 $ docker-compose up -d js
+
+# or
+
+$ docker pull quay.io/orggue/talks
+
+$ docker run -p 8000:8000 quay.io/orggue/talks -d
 ```
 ## Variables
 If you are running it with docker-compose, which I recommend, you can set the
