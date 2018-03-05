@@ -30,7 +30,7 @@ $ docker-compose up -d go
 ```
 ### If the slide is *.html
 #### Local
-Follow the instructions you will find in the ![reveal.js documentation](https://github.com/hakimel/reveal.js).
+Follow the instructions you will find in the [reveal.js documentation](https://github.com/hakimel/reveal.js).
 #### Docker
 ```zsh
 $ docker build \

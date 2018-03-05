@@ -4,4 +4,5 @@
 Notes:
 Entrenar != predecir
 
-Es necesario guardar los modelos entrenados (.ckpt, .h5s...)
+Es necesario guardar los modelos entrenados en checkpoint (.ckpt, .h5s...)
+Preferiblemente no solo una vez, sino cada n epocas

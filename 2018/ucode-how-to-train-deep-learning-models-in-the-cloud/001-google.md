@@ -35,6 +35,10 @@ Set up your GCP project [here](https://cloud.google.com/ml-engine/docs/getting-s
     └── task.py  # Run the training of the model (HyperParam as flags)
 ```
 
+<spam class="RandM">
+[live example](https://github.com/uCodeByadidas/KERASGoogleCloudSample)
+</spam>
+
 /---/
 
 <!-- <spam class="clear-image">
